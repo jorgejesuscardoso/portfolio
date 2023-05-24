@@ -1,0 +1,39 @@
+h2 {
+    color: blue;
+    font-size: 2em;
+}
+body {
+background-color: rgb(255, 400, 200);
+font-size: 20px;
+}
+#EuSou {
+background-color: silver;
+}
+#descricao {
+background-color: aquamarine;
+}
+.estilo-lista {
+background-color: rgb(21, 255, 0);
+color: rgb(0, 0, 0);
+font-weight: bold;
+-webkit-text-stroke: 0.5px rgb(255, 255, 255);
+font-style: italic;
+line-height:30px;
+text-align: justify;
+text-decoration: underline;
+}
+.linkex {
+background-color: rgb(181, 201, 179);
+color: rgb(0, 0, 0);
+font-weight: bold;
+-webkit-text-stroke: 0.5px rgb(255, 255, 255);
+
+}
+
+p {
+font-family: monospace, sans-serif;
+}
+
+#ui {
+color: rgb(214, 54, 6);
+}
