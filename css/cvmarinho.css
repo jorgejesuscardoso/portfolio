@@ -12,3 +12,10 @@
     height: 300px;
     overflow: auto;
 }
+.linkex {
+    background-color: rgb(181, 201, 179);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    
+    }
