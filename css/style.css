@@ -37,3 +37,7 @@ font-family: monospace, sans-serif;
 #ui {
 color: rgb(214, 54, 6);
 }
+
+.name   {
+    font-family: 'Times New Roman', Times, serif;
+}
