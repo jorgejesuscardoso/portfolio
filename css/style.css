@@ -41,3 +41,10 @@ color: rgb(214, 54, 6);
 .name   {
     font-family: 'Times New Roman', Times, serif;
 }
+h3 {
+    font: 2em;
+    text-decoration: underline;
+}
+h4 {
+    text-decoration: underline;
+}
