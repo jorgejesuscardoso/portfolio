@@ -74,14 +74,38 @@ ul{
         
 }   
 strong{
-
-    background-color: rgb(189, 165, 165);
+    color: black;
+    background-color: rgb(105, 100, 100);
 }
 .foto-eu{
 
     width: 30%;
     border-radius: 200px;
     margin: auto;
-    display:flex;
+    display:block;
    
+ }
+
+ .pmarron{
+
+    color: aliceblue;
+    background-color: rgb(65, 65, 65);
+ }
+
+ .alinhaTexto{
+
+    text-indent: 40px;
+    color: rgb(8, 8, 8);
+    background-color: rgba(145, 160, 148, 0.979);
+    width: 70%;
+    text-align: justify;
+    margin: auto;
+    display: flex;
+    font-size:bold;
+ }
+
+ .skill{
+
+    margin: auto;
+    display: flex;
  }
