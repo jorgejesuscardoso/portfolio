@@ -20,20 +20,21 @@ padding-bottom: 0px;
     background-color: azure;
     margin-right: 0;
     margin-left: 15px;
-    color: aliceblue;
     padding: 0px 0px;
     border-radius: 20px;
+    color: blue;
 }
 
 .indice{
 
-    background-color: rgb(177, 190, 175);
+    background-color:rgb(177, 190, 175);
     position: absolute;
     width: 20%;
     height: 123px;
     border-radius: 20px;
     z-index: 2;
     border-style:hidden;
+    padding: 0%;
 }
 
 a{
@@ -105,7 +106,33 @@ strong{
  }
 
  .skill{
-
+    
     margin: auto;
+    width: 20%;
     display: flex;
+    padding: 0%;
+
  }
+
+ h3:hover{
+
+    color: blue;
+    
+}  
+
+#link-externo{
+
+
+
+}
+
+.estilo-lista2 {
+
+    font-weight: bold;
+    font-style: italic;
+    line-height:30px;
+    text-align: justify;
+    margin-left: 30px;
+      
+    }
+
