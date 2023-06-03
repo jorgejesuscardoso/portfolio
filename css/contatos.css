@@ -1,0 +1,47 @@
+body{
+    background-color: antiquewhite;
+}
+
+
+nav{
+    font-style: none;
+    
+}
+
+#ul-nav{
+    
+        margin: auto;
+        padding: auto;
+        width: 100%;
+        text-align: center;
+    
+    
+}
+    
+#div-nav{
+        background-color: rgb(134, 137, 139);
+        height: 50px;
+        position: flex;
+        margin-top: 20px;
+ }
+
+ a{
+
+    text-decoration: none;
+    color: black;
+
+ }
+
+ 
+ a:hover{
+
+    color: blue;
+
+ }
+
+li.NAV{
+  
+        display: inline-block;
+        width: 20%;
+        font-size: 1.27em;
+}

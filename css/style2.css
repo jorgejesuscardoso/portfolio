@@ -1,0 +1,109 @@
+body{
+    background-color:rgb(177, 190, 175) ;
+}
+
+header{
+    text-align: center;
+    font-size: x-large;
+}
+
+a{
+    text-decoration: none;
+    color: black;  
+}
+
+a:hover{
+    background-color: azure;
+    color: blue;
+}
+
+li.NAV{
+  
+    display: inline-block;
+    width: 20%;
+    font-size: 1.27em;
+}
+
+h2{
+    text-align: center;
+}
+
+h2:hover{
+    color: blue;
+}
+
+h3{
+    text-align: center;
+    clear: both;
+}
+
+#ul-nav{
+    
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    text-align: center;
+
+
+}
+
+#div-nav{
+    background-color: rgb(134, 137, 139);
+    height: 10%;
+    position: flex;
+}
+
+nav{
+font-style: none;
+
+}
+
+.tabela{
+    width: 35%; 
+    margin-left: 30%; 
+    padding: auto; 
+    border-color: black; 
+    text-align: center;
+    font-size: auto;
+}
+
+.img{
+    width: 100%;
+   
+
+}
+.div-img1{
+    width: 25%;
+    padding: auto;
+    float: right;
+}
+
+.div-img2{
+    width: 25%;
+    margin-right: 5%;
+    padding: auto;
+    float: left;
+}
+
+.div-secao{
+    width: 40%;
+    margin: auto;
+    padding:auto;
+    text-align: justify;
+    text-indent: 35px;
+}
+
+#lateral{
+
+    width: 19.9%;
+    float:left;
+    position: absolute;
+    margin-top: 19%;
+    font-size: 1.01em;
+    text-align: center;
+
+}
+
+span{
+    font-style: italic;
+}

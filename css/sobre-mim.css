@@ -1,0 +1,153 @@
+body{
+
+    background-color: rgb(253,251,251);
+
+}
+
+
+#cabecalho{
+
+    top: 0;
+    background-color: rgb(145, 145, 145);
+    color: blue;
+    margin:auto;
+    padding: auto;
+    border: 1px solid black;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+#cabecalho:hover{
+    color: green;
+}
+
+
+#titulo{
+
+    font-size: 2em;
+    font-family: serif;
+    font-weight: 900;
+}
+
+
+#main{
+
+    border:none;
+    width: 40%;
+    float: right;
+    margin-top: 5%;
+    margin-right: 29.2%;
+
+}
+
+
+.lado-esquerdo{
+
+    background-color: rgb(145, 145, 145);
+    width: 22.25%;
+    float: left;
+    text-align: justify;
+    margin-top: 5%;
+    text-indent: 30px;
+    font-size: 18px;
+    line-height: normal;
+    overflow: auto;
+    position: flex;
+}
+
+.lado-direito{
+    border: none;
+}
+
+#a10{
+
+    border: none;
+
+}
+
+p{
+    text-indent: 30px;
+    text-align: justify;
+}
+
+
+#minha_foto{
+
+    width: 80%;
+    margin:auto;
+    padding: auto;
+
+}
+
+#rodape{
+
+    width: 100%;
+    text-align: center;
+    position: flex;
+    margin-top: 90%;
+    margin-bottom: 0;
+    height: 2.5rem;
+    font-size: large;
+}
+
+#table{
+
+    border-style: groove;
+    width: 50%;
+    margin: auto;
+    padding: auto;
+
+}
+
+h2, h3{
+    text-align: center;
+}
+
+nav{
+    font-style: none;
+    
+}
+
+#ul-nav{
+    
+        margin: auto;
+        padding: auto;
+        width: 100%;
+        text-align: center;
+    
+    
+}
+    
+#div-nav{
+        background-color: rgb(134, 137, 139);
+        height: 50px;
+        position: flex;
+        margin-top: 20px;
+ }
+
+ a{
+
+    text-decoration: none;
+    color: black;
+
+ }
+
+li.NAV:hover{
+
+    font-size: 1.2em;
+
+ }
+
+ a:hover{
+
+    color: blue;
+
+ }
+
+li.NAV{
+  
+        display: inline-block;
+        width: 20%;
+        font-size: 1.27em;
+}
