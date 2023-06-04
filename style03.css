@@ -1,0 +1,70 @@
+        body{
+            background-image: linear-gradient(90deg, rgb(167, 161, 161),rgb(136, 236, 136));
+        }
+
+        #login{
+
+            background-color: azure;
+            border-radius: 5px;
+            width: 400px;
+            height: 400px;
+            text-align: center;
+            margin:auto;
+            padding: auto;
+            margin-top: 5%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: flex;
+
+        }
+
+        a{
+
+            text-decoration: none;
+            color: black;
+        }
+
+        input{
+
+            width: 75%;
+            height: 100%;
+            border-style:outset;
+            border-color: rgb(255, 251, 251);
+            font-weight: bold;
+            margin: auto;
+            padding: auto;
+        
+
+        }
+
+        
+
+        button{
+
+            margin-top: 5%;
+            width: 75%;
+            height: 150%;
+            background-image: linear-gradient(90deg, rgb(167, 161, 161),rgb(92, 241, 92));
+            font-weight: bold;       
+
+        }
+
+       
+        a:hover{
+
+            color: blue;
+
+        }
+
+        form{
+            height: 8%;
+        }
+
+        #rodape{
+            
+            text-align: center;
+            width: 100%;
+            padding: auto;
+            margin: auto;
+            position: flex;
+            margin-top: 13%;
+        }
