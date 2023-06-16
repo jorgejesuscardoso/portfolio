@@ -160,7 +160,7 @@ function gerarElementos() {
     const startRaceBtn = document.createElement("button");
     startRaceBtn.id = "start-race-btn";
     startRaceBtn.className = "btn-go";
-    startRaceBtn.textContent = "VAI!";
+    startRaceBtn.textContent = "Clique!";
 
     // Adicionando o elemento <button> ao <body>
     bodyElement.appendChild(startRaceBtn);
