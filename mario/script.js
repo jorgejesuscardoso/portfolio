@@ -4,10 +4,6 @@
 
 window.onload = () => {
     gerarElementos();
-
-    const scorep1 = localStorage.getItem('scoreplayer1');
-    const scorep2 = localStorage.getItem('scoreplayer2');
-
     
     // Captura de elementos que iremos usar:
     const startBtn = document.getElementById('start-race-btn'); // captura o botao start
@@ -18,8 +14,12 @@ window.onload = () => {
     const scorePlayer1 = document.getElementById('p1Score');
     const scorePlayer2 = document.getElementById('p2Score');
 
-    scorePlayer1.innerText = scorep1;
-    scorePlayer2.innerText = scorep2;
+    if (localStorage.getItem('scoresPlayers') !== null) {
+        const scoresPlayers = JSON.parse(localStorage.getItem('scoresPlayers'));
+
+        scorePlayer1.innerText = scoresPlayers[0];
+        scorePlayer2.innerText = scoresPlayers[1];
+    }
 
     player1.style.marginLeft = 0;
     player2.style.marginLeft = 0;
@@ -36,17 +36,20 @@ window.onload = () => {
             audioWinner.play();
             reset();
             scorePlayer1.innerText = +scorePlayer1.innerText + 1;
-            localStorage.setItem('scoreplayer1', scorePlayer1.innerText)
-
+           
         } else if (player2Win) {
             alert('PLAYER 2 VENCEU');
             audioWinner.play();
             reset();
             scorePlayer2.innerText = +scorePlayer2.innerText + 1;
-            localStorage.setItem('scoreplayer2', scorePlayer2.innerText)
+    
 
         }
 
+        const scores = [];
+        scores.push(parseInt(scorePlayer1.innerText))
+        scores.push(parseInt(scorePlayer2.innerText))
+        localStorage.setItem('scoresPlayers', JSON.stringify(scores))
     });
 
     const cars = document.querySelectorAll('.car');
