@@ -5,12 +5,21 @@
 window.onload = () => {
     gerarElementos();
 
+    const scorep1 = localStorage.getItem('scoreplayer1');
+    const scorep2 = localStorage.getItem('scoreplayer2');
+
+    
     // Captura de elementos que iremos usar:
     const startBtn = document.getElementById('start-race-btn'); // captura o botao start
     const resetBtn = document.getElementById('reset-race-btn'); // captura o botao reset
     const player1 = document.getElementById('player1');         // captura o elemento player1
     const player2 = document.getElementById('player2');         // captura o elemento player2
     const audioWinner = document.getElementById('audioWinner'); // captura o elemento de audio
+    const scorePlayer1 = document.getElementById('p1Score');
+    const scorePlayer2 = document.getElementById('p2Score');
+
+    scorePlayer1.innerText = scorep1;
+    scorePlayer2.innerText = scorep2;
 
     player1.style.marginLeft = 0;
     player2.style.marginLeft = 0;
@@ -26,10 +35,16 @@ window.onload = () => {
             alert('PLAYER 1 VENCEU');
             audioWinner.play();
             reset();
+            scorePlayer1.innerText = +scorePlayer1.innerText + 1;
+            localStorage.setItem('scoreplayer1', scorePlayer1.innerText)
+
         } else if (player2Win) {
             alert('PLAYER 2 VENCEU');
             audioWinner.play();
             reset();
+            scorePlayer2.innerText = +scorePlayer2.innerText + 1;
+            localStorage.setItem('scoreplayer2', scorePlayer2.innerText)
+
         }
 
     });
