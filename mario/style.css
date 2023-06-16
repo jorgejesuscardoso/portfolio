@@ -14,13 +14,13 @@ body {
 }
 
 header img {
-  background-color: white;
+  /* background-color: white; */
   padding: 20px;
   /* margin-top: 20px; */
 }
 
 button {
-  margin-top: 0;
+  margin-top: 20px;
   font-size: xx-large;
   color: #fff;
   padding: 20px;
@@ -39,7 +39,7 @@ button {
   display: inline-block;
   font-family: 'Luckiest Guy', cursive;
   font-size: 40px;
-  margin-top: 0px;
+  margin-top: 20px;
   color: white;
   text-shadow: black 2px 2px 5px;
 }
@@ -92,17 +92,33 @@ button {
   font-size: 20px;
 }
 
-#ini {
-  position: absolute;
-  font-size: 1.3em;
+.scoreSection {
+  text-align: center;
 }
-#ini a{
-  text-decoration: none;
-  color: yellow;
-  font-weight: bold;
+
+.scorePlayer {
+  display: flex;
+  justify-content: center;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 20px;
+  margin: 15px;
+  color: white;
+  text-shadow: black 2px 2px 5px;
 }
-#ini a:hover{
-  text-decoration: none;
-  color: rgb(38, 0, 255);
-  font-weight: bold;
+
+.scorePlayer p {
+  margin: 5px;
+}
+
+.scores-players {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 20px;
+  margin-top: 20px;
+  color: white;
+  text-shadow: black 2px 2px 5px;
 }
