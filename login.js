@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
       if (dados.login === "Bushido" && dados.senha === "123" || dados.login === "Kauã" && dados.senha === "123"  ) {
         boasVindas(dados.login);
-        window.location.href = "index.html"
+        window.location.href = "mario/index.html"
       } else {
         mensagemErro();
       }
