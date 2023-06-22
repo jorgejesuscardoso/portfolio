@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input [ type = 'checkbox' ] {
+  margin-left: 5px;
+}
+
+body {
+  background-color: rgb(7, 63, 35);
+}
+
+main {
+  background-color: rgb(39, 223, 54);
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  background-color: rgb(2, 177, 17);
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  margin: auto;
+}
+
+h1 {
+  font-weight: 900;
+  color: rgb(2, 241, 2);
+}
+
+input [ type = 'text' ] , [ type = 'email' ] {
+  margin-top: 5px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+
+#chkb {
+  text-align: left;
+}
+
+button {
+  border-radius: 1px;
+  width: 50px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 0.8em;
+}
+
+a {
+  text-decoration: none; 
+  color:yellow;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+a:hover {
+  color: white;
+}
