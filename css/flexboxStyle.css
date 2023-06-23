@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 6px;
+}
+
+.header-img {
+  width: 30px;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 40px;
+  height: 20px;
+  font-size: 8.5px;
+}
+
+.home {
+  background-color: white;
+  color: black;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.home:hover {
+  background-color: rgb(0, 255, 106);
+}
+
+.header-login {
+  width: 100px;
+  background-color: white;
+  color: black;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+#header {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-login:hover {
+  background-color: rgb(0, 255, 106);
+}
+
+.text-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.gallery {
+  margin-top: 20px;
+  width: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-card img{
+  width: 100px;
+}
+
+.footer-container img {
+  margin-top: 40px;
+  width: 30px;
+  padding: 10px;
+}
