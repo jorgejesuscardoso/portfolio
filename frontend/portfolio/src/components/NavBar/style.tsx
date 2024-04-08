@@ -186,7 +186,7 @@ export const NavBarContainerSimple = styled.div`
     font-weight: 600;
     color: var(--link-color);
     transition: 0.1s;
-    margin-left: 5px;
+    margin-left: 2px;
     font-size: 0.8rem;
     &:hover {
       color: var(--link-color-hover);
