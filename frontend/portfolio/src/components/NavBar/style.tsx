@@ -191,9 +191,9 @@ export const NavBarContainerSimple = styled.div`
         }
     }
   }
-  &.hiden {
+  /* &.hiden {
     display: none;
-  }
+  } */
   span {
     font-weight: 600;
     color: var(--link-color);

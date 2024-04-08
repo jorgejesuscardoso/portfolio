@@ -3,7 +3,7 @@ import { MainContainer } from './style'
 const Home = () => {
   return (
     <MainContainer>
-      <h1>Homee01</h1>
+      <h1>Home</h1>
     </MainContainer>
   )
 }
