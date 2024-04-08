@@ -8,6 +8,7 @@ export const MainHeaderContainer = styled.header`
   align-items: center;
   width: 100%;
   height: 10vh;
+  font-size: 16px;
   background-color: var(--background-color-1);
 `;
 export const LogoContainer = styled.div`
@@ -30,7 +31,7 @@ export const SearchContainer = styled.div`
     background-color: transparent;
     border: none;
     color: var(--text-color-1);
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-left: 1rem;
     border: 1px solid var(--border-color);
     border-right: none;
@@ -48,7 +49,7 @@ export const SearchContainer = styled.div`
     align-items: center;
     width: 5%;
     height: 40%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: transparent;
     border: 1px solid var(--border-color);
     border-left: none;
@@ -56,7 +57,7 @@ export const SearchContainer = styled.div`
     cursor: pointer;
     img {
       width: 2rem;
-      height: 2rem;
+      height: 1.5rem;
     }
     &:focus {
       outline: none;

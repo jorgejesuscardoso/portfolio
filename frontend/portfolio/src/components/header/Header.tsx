@@ -17,7 +17,7 @@ const MainHeader = () => {
   return (
     <MainHeaderContainer>
       <LogoContainer>
-        <img src="logo.png" alt="logomarca - bushido developer" />
+        <img src="logo3.png" alt="logomarca - bushido developer" />
       </LogoContainer>
       <SearchContainer>
         <input 
