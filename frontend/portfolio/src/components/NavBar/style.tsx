@@ -156,7 +156,7 @@ export const NavBarContainerSimple = styled.div`
       border-left: 5px solid transparent;
       cursor: pointer;
       img {
-        width: 25px;
+        width: 1.3vw;
         margin-right: 10px;
       }
       a {
