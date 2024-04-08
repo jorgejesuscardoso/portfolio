@@ -10,6 +10,7 @@ export const MainHeaderContainer = styled.header`
   height: 10vh;
   font-size: 16px;
   background-color: var(--background-color-1);
+  z-index: 10;
 `;
 export const LogoContainer = styled.div`
   width: 13%;

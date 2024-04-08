@@ -4,7 +4,7 @@ export const LogoContainer = styled.div`
   width: 100%;
   padding: 10px;
   img {
-    width: 85%;
+    width: 100%;
   }
 `;
 export const NavSearchContainer = styled.div`
@@ -93,12 +93,12 @@ export const NavAsideLeft = styled.nav`
       display: flex;
       align-items: center;
       width: 100%;
-      height: 50px;
-      padding: 0 20px;
+      height: 40px;
+      padding: 10px 15px;
       border-left: 5px solid transparent;
       cursor: pointer;
       img {
-        width: 30px;
+        width: 1.3vw;
         margin-right: 10px;
       }
       a {
@@ -109,6 +109,7 @@ export const NavAsideLeft = styled.nav`
         height: 100%;
         padding: 15px;
         font-weight: 600;
+        font-size: 0.8rem;
         color: var(--link-color);
         transition: 0.1s;
         
@@ -124,6 +125,7 @@ export const NavAsideLeft = styled.nav`
     font-weight: 600;
     color: var(--link-color);
     transition: 0.1s;
+    font-size: 0.8rem;
     margin-left: 15px;
   }
 `;
