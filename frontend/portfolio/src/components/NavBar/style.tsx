@@ -23,7 +23,7 @@ export const NavSearchContainer = styled.div`
     background-color: transparent;
     padding-left: 20px;
     color: var(--text-color);
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: 600;
     &:focus {
       outline: none;
@@ -220,7 +220,7 @@ export const NavBarContainerSimpleFooter = styled.footer`
     }
   }
   img {
-    width: 30%;
+    width: 20%;
     cursor: pointer;
   }
 `;
