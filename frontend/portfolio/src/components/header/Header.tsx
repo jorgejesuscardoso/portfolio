@@ -22,7 +22,7 @@ const MainHeader = () => {
       <SearchContainer>
         <input 
           type="text"
-          placeholder="Pesquisa... Ex: Projetos, Stacks, contato, conteúdo,etc"
+          placeholder="Pesquisa... Ex: Projetos, Stacks, contato, conteúdo, freelance, curso, etc"
         />
         <button
           type='submit'
