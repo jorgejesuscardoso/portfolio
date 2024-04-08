@@ -67,6 +67,9 @@ const NavBarAsideLeft = () => {
               : null} 
           </li>
         </ul> 
+        <NavBarContainerSimpleFooter>
+          <img src="config.png" alt="" />
+        </NavBarContainerSimpleFooter>
       </NavBarContainerSimple>
       
       <NavBarContainer

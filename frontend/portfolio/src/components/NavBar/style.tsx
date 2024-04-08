@@ -4,7 +4,7 @@ export const LogoContainer = styled.div`
   width: 100%;
   padding: 10px;
   img {
-    width: 100%;
+    width: 85%;
   }
 `;
 export const NavSearchContainer = styled.div`
@@ -62,12 +62,13 @@ export const NavBarContainer = styled.div`
   width: 20%;
   background-color: var(--background-color-1);
   border-right: 1px solid var(--border-color-2);
-  z-index: 100;
-  transform: translateX(-100%);
+  z-index: 1;
+  transform: translateX(-65%);
   transition: 0.5s;
   gap: 10px;
 
   &.show {
+    z-index: 100;
     transform: translateX(0);
   }
 `;
@@ -131,19 +132,19 @@ export const NavBarContainerSimple = styled.div`
   top: 5vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: start;
-  padding: 10px;
-  height: 100%;
+  height: 90vh;
   margin-top: 5vh;
   width: 6.8%;
   overflow-x: hidden;
   background-color: var(--background-color-1);
-  z-index: 1;
+  z-index: 10;
 
   ul {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     list-style-type: none;
 
     li {
@@ -152,8 +153,9 @@ export const NavBarContainerSimple = styled.div`
       justify-content: start;
       width: 100%;
       height: 40px;
-      padding: 0 10px;
+      padding: 10px 15px;
       border-left: 5px solid transparent;
+      //border-bottom: 1px solid var(--border-color-2);
       cursor: pointer;
       img {
         width: 1.3vw;
@@ -214,6 +216,10 @@ export const NavBarContainerSimpleFooter = styled.footer`
         color: var(--link-color-hover);
       }
     }
+  }
+  img {
+    width: 30%;
+    cursor: pointer;
   }
 `;
 export const NavBarConfig = styled.div`
