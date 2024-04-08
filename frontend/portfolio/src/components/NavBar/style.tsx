@@ -144,7 +144,6 @@ export const NavBarContainerSimple = styled.div`
     flex-direction: column;
     width: 70%;
     list-style-type: none;
-    gap: 5px;
 
     li {
       display: flex;
