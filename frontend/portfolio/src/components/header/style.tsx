@@ -75,7 +75,7 @@ export const ThemeContainer = styled.div`
   cursor: pointer;
   img {
     width: 35%;
-    height: 1.7rem;
+    height: 1.5rem;
   }
   span {
     text-align: center;
