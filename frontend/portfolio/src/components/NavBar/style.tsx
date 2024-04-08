@@ -63,7 +63,7 @@ export const NavBarContainer = styled.div`
   background-color: var(--background-color-1);
   border-right: 1px solid var(--border-color-2);
   z-index: 1;
-  transform: translateX(-65%);
+  transform: translateX(-100%);
   transition: 0.5s;
   gap: 10px;
 
@@ -86,8 +86,10 @@ export const NavAsideLeft = styled.nav`
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     list-style-type: none;
     margin-top: 10px;
+    gap: 10px;
 
     li {
       display: flex;
@@ -146,7 +148,12 @@ export const NavBarContainerSimple = styled.div`
   ul {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    height: 60%;
+    padding: 10px;
+    gap: 15px;
     list-style-type: none;
 
     li {
