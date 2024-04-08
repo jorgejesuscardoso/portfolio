@@ -31,7 +31,7 @@ export const SearchContainer = styled.div`
     background-color: transparent;
     border: none;
     color: var(--text-color-1);
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding-left: 1rem;
     border: 1px solid var(--border-color);
     border-right: none;
@@ -68,13 +68,13 @@ export const ThemeContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 6%;
+  width: 5%;
   border: 1px solid var(--border-color);
   border-radius: 15px;
   cursor: pointer;
   img {
     width: 35%;
-    height: 2rem;
+    height: 1.7rem;
   }
   span {
     text-align: center;
