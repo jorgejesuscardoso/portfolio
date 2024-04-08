@@ -152,19 +152,18 @@ export const NavBarContainerSimple = styled.div`
       justify-content: start;
       width: 100%;
       height: 40px;
-      padding: 10px;
       border-left: 5px solid transparent;
       cursor: pointer;
       img {
-        width: 30px;
+        width: 25px;
         margin-right: 10px;
       }
       a {
         display: flex;
         align-items: center;
         text-decoration: none;
-        padding: 15px;
         font-weight: 600;
+        font-size: 0.8rem;
         color: var(--link-color);
         transition: 0.1s;
         z-index: 100;
@@ -187,7 +186,8 @@ export const NavBarContainerSimple = styled.div`
     font-weight: 600;
     color: var(--link-color);
     transition: 0.1s;
-    margin-left: 15px;
+    margin-left: 5px;
+    font-size: 0.8rem;
     &:hover {
       color: var(--link-color-hover);
     }
