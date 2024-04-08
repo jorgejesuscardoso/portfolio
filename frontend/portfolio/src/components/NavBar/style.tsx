@@ -137,6 +137,7 @@ export const NavBarContainerSimple = styled.div`
   margin-top: 5vh;
   width: 6.8%;
   overflow-x: hidden;
+  background-color: var(--background-color-1);
   z-index: 1;
 
   ul {
