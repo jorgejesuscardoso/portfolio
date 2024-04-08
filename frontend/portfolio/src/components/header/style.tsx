@@ -78,7 +78,7 @@ export const ThemeContainer = styled.div`
   }
   span {
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 40%;
     border-left: 1px solid var(--border-color);
     margin-left: 0.5rem;
