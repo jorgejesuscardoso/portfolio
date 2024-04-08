@@ -26,36 +26,42 @@ const NavBarAsideLeft = () => {
         >
           <li
             onMouseOver={() => setIcoAlt('Home')}
-          >
+          ><Link to="/">
             <img src="ico_home.png" alt="Home Ico" />
             { icoAlt === 'Home' ?
-              <Link to="/home">Home</Link>
+              <span>Home</span>
               : null
               }
+              </Link>
           </li>
           <li
             onMouseOver={() => setIcoAlt('Projects')}
           >
+            <Link to="/projects">
             <img src="ico_project.png" alt="Project Ico" />
             { icoAlt === 'Projects' ?
-              <Link to="/projects">Projects</Link>
+              <span>Projects</span>
               : null}
+            </Link>
           </li>
           <li
             onMouseOver={() => setIcoAlt('Contact')}
           >
+            <Link to="/contact">
             <img src="ico_contact.png" alt="Contact Ico" />
             { icoAlt === 'Contact' ?
-              <Link to="/contact">Contact</Link>
+              <span>Contact</span>
               : null}
+            </Link>
           </li>
           <li
             onMouseOver={() => setIcoAlt('About')}
           >
+            <Link to="/about">
             <img src="ico_about.png" alt="About Ico" />
             { icoAlt === 'About' ?
-              <Link to="/about">About</Link>
-              : null}
+              <span>About</span>
+              : null}</Link>
           </li>
           <li
             onClick={() => setToggleNav(!toggleNav)}
