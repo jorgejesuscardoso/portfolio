@@ -1,8 +1,10 @@
+import { MainContainer } from './style'
+
 const Home = () => {
   return (
-    <div>
+    <MainContainer>
       <h1>Homee01</h1>
-    </div>
+    </MainContainer>
   )
 }
 

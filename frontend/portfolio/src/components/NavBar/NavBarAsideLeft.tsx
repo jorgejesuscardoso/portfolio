@@ -1,12 +1,18 @@
 import { Link } from 'react-router-dom';
-import { LogoContainer, NavAsideLeft, NavBarContainer, NavBarContainerSimple, NavSearchContainer} from './style';
+import { 
+  LogoContainer,
+  NavAsideLeft,
+  NavBarConfig,
+  NavBarContainer,
+  NavBarContainerSimple,
+  NavBarContainerSimpleFooter,
+  NavSearchContainer,
+} from './style';
 import { useState } from 'react';
 
 const NavBarAsideLeft = () => {
   const [toggleNav, setToggleNav] = useState(false);
   const [icoAlt, setIcoAlt] = useState('')
-
-  console.log(icoAlt)
 
   return (
     <>      
@@ -74,6 +80,11 @@ const NavBarAsideLeft = () => {
             type="text"
             placeholder="Search.."
           />
+          <button
+            type='submit'
+          >
+            <img src="ico_search.png" alt="" />
+          </button>
         </NavSearchContainer>
         <NavAsideLeft>
           <ul>
@@ -101,6 +112,12 @@ const NavBarAsideLeft = () => {
             </li>
           </ul>
         </NavAsideLeft>
+        <NavBarConfig>
+          <img src="config.png" alt="Configurações" />
+        </NavBarConfig>
+        <NavBarContainerSimpleFooter>
+          <p>Developed by: <a href="">Jorge de Jesus Cardoso</a></p>
+        </NavBarContainerSimpleFooter>
       </NavBarContainer>
     </>
   );

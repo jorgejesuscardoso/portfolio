@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #29292e;
+  background-color: #1a1a1a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,12 +14,23 @@
 
   --background-color-1: #29292e;
   --background-color-2: #1a1a1a;
+  --background-footer: #121214;
   --text-color: #fff;
+  --text-copy-color: #aaa;
   --link-color: #fff;
   --link-color-hover: #646cff;
   --list-color: #525252;
   --list-color-hover: #3f299250;
   --button-hover-color: #6c6c6e;
+  --border-color: #525252;
+  --border-color-2: #3f3f3f;
+  --placeholder-color: #888;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {

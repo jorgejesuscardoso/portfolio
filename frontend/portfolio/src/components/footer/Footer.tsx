@@ -1,10 +1,14 @@
+import { MainFooter } from './style';
+
 const Footer = () => {
   return (
-    <footer className="footer">      
-      <div className="footer__info">
-        <p>© 2024 Jorge de Jesus Cardoso. All Rights Reserved.</p>
+    <MainFooter>      
+      <div>
+        <p
+          className='copy'
+        >© 2024 Jorge de Jesus Cardoso. All Rights Reserved.</p>
       </div>
-    </footer>
+    </MainFooter>
   );
 }
 
