@@ -99,7 +99,7 @@ const NavBarAsideLeft = () => {
           <ul>
             <li>
               <img src="ico_home.png" alt="" />
-              <Link to="/home">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <img src="ico_project.png" alt="" />
