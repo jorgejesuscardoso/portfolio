@@ -152,6 +152,7 @@ export const NavBarContainerSimple = styled.div`
       justify-content: start;
       width: 100%;
       height: 40px;
+      padding: 0 20px;
       border-left: 5px solid transparent;
       cursor: pointer;
       img {
