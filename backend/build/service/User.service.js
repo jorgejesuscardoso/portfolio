@@ -5,6 +5,16 @@ class UserService {
     constructor(userModel = new UserModel_1.UsersModel()) {
         this.userModel = userModel;
     }
+    async createUser(user) {
+        return this.userModel.createUser(user);
+    }
+    async LoginUser(email, password) {
+        const getUser = await this.userModel.getUserByEmail(email);
+        if (!getUser) {
+            throw new Error('User not found');
+        }
+        return getUser;
+    }
     async getAllUsers() {
         return this.userModel.getAllUsers();
     }
@@ -13,9 +23,6 @@ class UserService {
     }
     async getUserByEmail(email) {
         return this.userModel.getUserByEmail(email);
-    }
-    async createUser(user) {
-        return this.userModel.createUser(user);
     }
     async updateUser(id, user) {
         return this.userModel.updateUser(id, user);

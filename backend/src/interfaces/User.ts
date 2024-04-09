@@ -4,6 +4,7 @@ export type User = {
   password: string,
   username: string,
   role: string,
+  dataValues?: {}
 };
 
 export type UserWithOptionalId = {

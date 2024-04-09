@@ -6,6 +6,18 @@ export default class UserService {
     private userModel = new UsersModel()
   ) { }
 
+  async createUser(user: User) {
+    return this.userModel.createUser(user);
+  }
+
+  async LoginUser(email: string, password: number) {
+    const getUser = await this.userModel.getUserByEmail(email);
+    if (!getUser) {
+      throw new Error('User not found');
+    }
+    return getUser;
+  }
+
   async getAllUsers() {
     return this.userModel.getAllUsers();
   }
@@ -16,10 +28,6 @@ export default class UserService {
 
   async getUserByEmail(email: string) {
     return this.userModel.getUserByEmail(email);
-  }
-
-  async createUser(user: User) {
-    return this.userModel.createUser(user);
   }
 
   async updateUser(id: number, user: User) {
