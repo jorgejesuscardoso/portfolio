@@ -2,7 +2,10 @@ import { useEffect, useState } from 'react';
 import { 
   MainContainer,
 } from './style';
-import { GetLocalStorage, SetLocalStorage } from '../utils/LocalStorage';
+import { 
+  GetLocalStorage,
+  SetLocalStorage
+} from '../../utils/LocalStorage';
 
 const Warning = () => {
   const [closed, setClosed] = useState(false);

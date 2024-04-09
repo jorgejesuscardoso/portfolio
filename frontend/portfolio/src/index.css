@@ -15,15 +15,20 @@
 
   --background-color-1: #29292e;
   --background-color-2: #1a1a1a;
+  --background-color-3: #333;
   --background-footer: #121214;
+  --background-form: #ccc;
   --frame-bg: #000;
   --text-color: #fff;
+  --text-color-black: #333;
   --text-copy-color: #aaa;
   --link-color: #fff;
   --link-color-hover: #646cff;
   --list-color: #525252;
-  --list-color-hover: #3f299250;
+  --list-color-hover: #5740aa50;
   --button-hover-color: #6c6c6e;
+  --button-outline: #9d68f1;
+  --input-outline: #bdaff1;
   --border-color: #525252;
   --border-color-2: #3f3f3f;
   --placeholder-color: #888;

@@ -4,6 +4,8 @@ import LayOut from './components/layout/LayOut'
 import Projects from './pages/projects/Projects'
 import Contact from './pages/contact/Contact'
 import About from './pages/about/About'
+import Profile from './pages/profile/Profile'
+import Login from './components/login/Login'
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
     <Routes>
       <Route path='/' element={<LayOut />} >
         <Route index element={<Home />} />
+        <Route path='/profile' element={<Profile />} />
+        <Route path='/login' element={<Login />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/about' element={<About />} />

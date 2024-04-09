@@ -9,10 +9,12 @@ import {
   NavSearchContainer,
 } from './style';
 import { useState } from 'react';
+import Config from '../config/Config';
 
 const NavBarAsideLeft = () => {
   const [toggleNav, setToggleNav] = useState(false);
   const [icoAlt, setIcoAlt] = useState('')
+  const [isActiveConfig, setIsActiveConfig] = useState(false);
 
   return (
     <>      
@@ -73,7 +75,9 @@ const NavBarAsideLeft = () => {
               : null} 
           </li>
         </ul> 
-        <NavBarContainerSimpleFooter>
+        <NavBarContainerSimpleFooter
+          onClick={() => setIsActiveConfig(!isActiveConfig)}
+        >
           <img src="config.png" alt="" />
         </NavBarContainerSimpleFooter>
       </NavBarContainerSimple>
@@ -128,6 +132,7 @@ const NavBarAsideLeft = () => {
           <p>Developed by: <a href="">Jorge de Jesus Cardoso</a></p>
         </NavBarContainerSimpleFooter>
       </NavBarContainer>
+      { isActiveConfig && <Config />}
     </>
   );
 }

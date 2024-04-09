@@ -140,7 +140,7 @@ export const NavBarContainerSimple = styled.div`
   align-items: start;
   height: 90vh;
   margin-top: 5vh;
-  width: 6.8%;
+  width: 8%;
   overflow-x: hidden;
   background-color: var(--background-color-1);
   z-index: 10;
@@ -164,7 +164,7 @@ export const NavBarContainerSimple = styled.div`
       height: 40px;
       padding: 10px 15px;
       border-left: 5px solid transparent;
-      //border-bottom: 1px solid var(--border-color-2);
+      // border-bottom: 1px solid var(--border-color-2);
       cursor: pointer;
       img {
         width: 1.3vw;
@@ -191,9 +191,6 @@ export const NavBarContainerSimple = styled.div`
         }
     }
   }
-  /* &.hiden {
-    display: none;
-  } */
   span {
     font-weight: 600;
     color: var(--link-color);
