@@ -65,7 +65,6 @@ export const NavBarContainer = styled.div`
   z-index: 1;
   transform: translateX(-100%);
   transition: 0.5s;
-  gap: 10px;
 
   &.show {
     z-index: 100;
@@ -89,7 +88,7 @@ export const NavAsideLeft = styled.nav`
     height: 100%;
     list-style-type: none;
     margin-top: 10px;
-    gap: 10px;
+    gap: 20px;
 
     li {
       display: flex;
@@ -151,9 +150,9 @@ export const NavBarContainerSimple = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 60%;
+    height: 70%;
     padding: 10px;
-    gap: 15px;
+    gap: 30px;
     list-style-type: none;
 
     li {
@@ -236,7 +235,7 @@ export const NavBarConfig = styled.div`
   height: 5vh;
   padding: 20px;
   img {
-    width: 10%;
+    width: 23px;
     cursor: pointer;
   }
 `;

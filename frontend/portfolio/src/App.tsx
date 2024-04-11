@@ -5,7 +5,7 @@ import Projects from './pages/projects/Projects'
 import Contact from './pages/contact/Contact'
 import About from './pages/about/About'
 import Profile from './pages/profile/Profile'
-import Login from './components/login/Login'
+import Login from './pages/login/Login'
 
 
 function App() {

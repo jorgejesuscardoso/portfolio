@@ -25,12 +25,12 @@ export const MenuConfig = styled.div`
       align-items: center;
       width: 100%;
       height: 40px;
-      padding: 10px 15px;
+      padding: 10px 0;
       border-left: 5px solid transparent;
       border-bottom: 1px solid var(--list-color);
       cursor: pointer;
       img {
-        width: 1.3vw;
+        width: 27px;
         margin-right: 10px;
       }
       a {
@@ -39,7 +39,7 @@ export const MenuConfig = styled.div`
         text-decoration: none;
         width: 100%;
         height: 100%;
-        padding: 15px;
+        padding: 10px;
         font-weight: 600;
         font-size: 0.8rem;
         color: var(--link-color);
