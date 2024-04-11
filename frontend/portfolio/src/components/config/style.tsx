@@ -4,7 +4,7 @@ export const MenuConfig = styled.div`
   position: fixed;
   top: 40vh;
   left: 8%;
-  min-width: 10%;
+  min-width: 15%;
   min-height: 50vh;
   background: var(--background-color-3);
   z-index: 999;
@@ -19,6 +19,7 @@ export const MenuConfig = styled.div`
     height: 100%;
     list-style-type: none;
     margin-top: 10px;
+    gap: 15px;
 
     li {
       display: flex;

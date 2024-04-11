@@ -8,18 +8,45 @@ import {
   NavBarContainerSimpleFooter,
   NavSearchContainer,
 } from './style';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Config from '../config/Config';
 
 const NavBarAsideLeft = () => {
+  const ref = useRef(null);
+  const ref2 = useRef(null);
   const [toggleNav, setToggleNav] = useState(false);
   const [icoAlt, setIcoAlt] = useState('')
   const [isActiveConfig, setIsActiveConfig] = useState(false);
+  const [callInMainNav, setCallInMainNav] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleClickOutside = (event: any) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setToggleNav(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+  }, [ref]);
+
+  useEffect(() => {
+    const handleClickOutside = (event: any) => {
+      if (ref2.current && !ref2.current.contains(event.target)) {
+        setIsActiveConfig(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+  }, [ref2]);
 
   return (
     <>      
       <NavBarContainerSimple
-        className={ toggleNav ? 'hiden' : 'show' }
+        className={ toggleNav ? 'hiden' : 'show' }        
       >
         <ul
           onMouseLeave={() => {
@@ -76,14 +103,18 @@ const NavBarAsideLeft = () => {
           </li>
         </ul> 
         <NavBarContainerSimpleFooter
-          onClick={() => setIsActiveConfig(!isActiveConfig)}
         >
-          <img src="config.png" alt="" />
+          <img 
+            src="config.png"
+            alt=""
+            onClick={() => setIsActiveConfig(!isActiveConfig)}
+          />
         </NavBarContainerSimpleFooter>
       </NavBarContainerSimple>
       
       <NavBarContainer
-        className={ toggleNav ? 'show' : 'hiden' } 
+        className={ toggleNav ? 'show' : 'hiden' }
+        ref={ref}
       >
         <LogoContainer>
           <img src="logo3.png" alt="" />
@@ -126,13 +157,26 @@ const NavBarAsideLeft = () => {
           </ul>
         </NavAsideLeft>
         <NavBarConfig>
-          <img src="config.png" alt="Configurações" />
+          <img 
+            src="config.png"
+            alt="Configurações" 
+            onClick={() => {
+              setIsActiveConfig(!isActiveConfig);
+              setCallInMainNav(!callInMainNav);
+            }}
+          />
         </NavBarConfig>
         <NavBarContainerSimpleFooter>
           <p>Developed by: <a href="">Jorge de Jesus Cardoso</a></p>
         </NavBarContainerSimpleFooter>
       </NavBarContainer>
-      { isActiveConfig && <Config />}
+      { isActiveConfig &&
+        <div 
+          ref={ref2}          
+        >
+          <Config />
+        </div>
+      }
     </>
   );
 }

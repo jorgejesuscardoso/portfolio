@@ -48,6 +48,11 @@
   --yellow-2: #d69e2e;
   --yellow-3: #f7df1e;
 }
+.mainMenuNav {
+  left: 0;
+  top: 39vh;
+  width: 20%;
+}
 
 * {
   margin: 0;
