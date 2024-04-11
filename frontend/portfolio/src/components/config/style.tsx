@@ -11,6 +11,7 @@ export const MenuConfig = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius:  0 10px 10px 0;
 
   ul {
     display: flex;
@@ -39,13 +40,11 @@ export const MenuConfig = styled.div`
         align-items: center;
         text-decoration: none;
         width: 100%;
-        height: 100%;
         padding: 10px;
         font-weight: 600;
         font-size: 0.8rem;
         color: var(--link-color);
-        transition: 0.1s;
-        
+        transition: 0.1s;        
       }
       &:hover {
           color: var(--link-color-hover);

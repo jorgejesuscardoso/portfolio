@@ -112,8 +112,7 @@ export const NavAsideLeft = styled.nav`
         font-weight: 600;
         font-size: 0.8rem;
         color: var(--link-color);
-        transition: 0.1s;
-        
+        transition: 0.1s;        
       }
       &:hover {
           color: var(--link-color-hover);

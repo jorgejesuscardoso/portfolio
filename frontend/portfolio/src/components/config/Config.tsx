@@ -2,9 +2,16 @@
 import { Link } from 'react-router-dom';
 import { MenuConfig } from './style';
 
-const Config = () => {
+type Propzin = {
+  CallInMainMenu: boolean;
+}
+
+const Config = ({ CallInMainMenu }: Propzin ) => {
+  console.log(CallInMainMenu);
   return (
-    <MenuConfig>
+    <MenuConfig
+      className={ CallInMainMenu === true ? 'showInMainMenu' : ''}
+    >
       <ul>
         <li>
           <Link to='/profile'>

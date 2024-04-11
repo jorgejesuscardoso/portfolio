@@ -1,15 +1,16 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Link } from 'react-router-dom';
 import { 
   LogoContainer,
   NavAsideLeft,
   NavBarConfig,
   NavBarContainer,
-  NavBarContainerSimple,
   NavBarContainerSimpleFooter,
   NavSearchContainer,
 } from './style';
 import React, { useEffect, useState } from 'react';
 import Config from '../config/Config';
+import NavSimple from './NavSimple';
 
 const NavBarAsideLeft = () => {
   const ref = React.useRef<HTMLDivElement>(null)
@@ -24,6 +25,7 @@ const NavBarAsideLeft = () => {
     const handleClickOutside = (event: any) => {
       if (ref.current && !ref.current.contains(event.target)) {
         setToggleNav(false);
+        setCallInMainNav(false);
       }
     }
     document.addEventListener('mousedown', handleClickOutside);
@@ -46,72 +48,13 @@ const NavBarAsideLeft = () => {
 
   return (
     <>      
-      <NavBarContainerSimple
-        className={ toggleNav ? 'hiden' : 'show' }        
-      >
-        <ul
-          onMouseLeave={() => {
-            setIcoAlt('');
-          }}
-        >
-          <li
-            onMouseOver={() => setIcoAlt('Home')}
-          ><Link to="/">
-            <img src="ico_home.png" alt="Home Ico" />
-            { icoAlt === 'Home' ?
-              <span>Home</span>
-              : null
-              }
-              </Link>
-          </li>
-          <li
-            onMouseOver={() => setIcoAlt('Projects')}
-          >
-            <Link to="/projects">
-            <img src="ico_project.png" alt="Project Ico" />
-            { icoAlt === 'Projects' ?
-              <span>Projects</span>
-              : null}
-            </Link>
-          </li>
-          <li
-            onMouseOver={() => setIcoAlt('Contact')}
-          >
-            <Link to="/contact">
-            <img src="ico_contact.png" alt="Contact Ico" />
-            { icoAlt === 'Contact' ?
-              <span>Contact</span>
-              : null}
-            </Link>
-          </li>
-          <li
-            onMouseOver={() => setIcoAlt('About')}
-          >
-            <Link to="/about">
-            <img src="ico_about.png" alt="About Ico" />
-            { icoAlt === 'About' ?
-              <span>About</span>
-              : null}</Link>
-          </li>
-          <li
-            onClick={() => setToggleNav(!toggleNav)}
-            onMouseOver={() => setIcoAlt('Show')}
-          >
-            <img src="next.png" alt="" />
-            { icoAlt === 'Show' ?
-              <span>Abrir</span>
-              : null} 
-          </li>
-        </ul> 
-        <NavBarContainerSimpleFooter
-        >
-          <img 
-            src="config.png"
-            alt=""
-            onClick={() => setIsActiveConfig(!isActiveConfig)}
-          />
-        </NavBarContainerSimpleFooter>
-      </NavBarContainerSimple>
+      <NavSimple
+        toggleNav={toggleNav}
+        setToggleNav={setToggleNav}
+        icoAlt={icoAlt}
+        setIcoAlt={setIcoAlt}
+        setIsActiveConfig={setIsActiveConfig}
+      />
       
       <NavBarContainer
         className={ toggleNav ? 'show' : 'hiden' }
@@ -134,20 +77,28 @@ const NavBarAsideLeft = () => {
         <NavAsideLeft>
           <ul>
             <li>
-              <img src="ico_home.png" alt="" />
-              <Link to="/">Home</Link>
+              <Link to="/">
+                <img src="ico_home.png" alt="" />
+                Home
+              </Link>
             </li>
             <li>
-              <img src="ico_project.png" alt="" />
-              <Link to="/projects">Projects</Link>
+              <Link to="/projects">
+                <img src="ico_project.png" alt="" />
+                Projects
+              </Link>
             </li>
             <li>
-              <img src="ico_contact.png" alt="" />
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact">
+                <img src="ico_contact.png" alt="" />
+                Contact
+              </Link>
             </li>
             <li>
-              <img src="ico_about.png" alt="" />
-              <Link to="/about">About</Link>
+              <Link to="/about">
+                <img src="ico_about.png" alt="" />
+                About
+              </Link>
             </li>
             <li
               onClick={() => setToggleNav(!toggleNav)}
@@ -163,7 +114,7 @@ const NavBarAsideLeft = () => {
             alt="Configurações" 
             onClick={() => {
               setIsActiveConfig(!isActiveConfig);
-              setCallInMainNav(!callInMainNav);
+              setCallInMainNav(true);
             }}
           />
         </NavBarConfig>
@@ -173,9 +124,11 @@ const NavBarAsideLeft = () => {
       </NavBarContainer>
       { isActiveConfig &&
         <div 
-          ref={ref2}          
+          ref={ref2}     
         >
-          <Config />
+          <Config
+            CallInMainMenu={callInMainNav}
+          />
         </div>
       }
     </>
