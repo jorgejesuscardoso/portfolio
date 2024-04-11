@@ -8,12 +8,13 @@ import {
   NavBarContainerSimpleFooter,
   NavSearchContainer,
 } from './style';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Config from '../config/Config';
 
 const NavBarAsideLeft = () => {
-  const ref = useRef(null);
-  const ref2 = useRef(null);
+  const ref = React.useRef<HTMLDivElement>(null)
+
+  const ref2 = React.useRef<HTMLDivElement>(null)
   const [toggleNav, setToggleNav] = useState(false);
   const [icoAlt, setIcoAlt] = useState('')
   const [isActiveConfig, setIsActiveConfig] = useState(false);
